@@ -1,6 +1,6 @@
 import cv2 as cv 
 
-# Reading Images.
+# Reading Images in detail.
 
 img = cv.imread('Photos/snowcat.jpg')
 
@@ -10,20 +10,20 @@ img = cv.imread('Photos/snowcat.jpg')
 
 # ----------------------------
 
-# Inspecting Image
+# Inspecting in detail Image
 
 print(img.shape)
 print(img[0, 0])
 
 
-# GreyScale image.
+# GreyScale in detail image.
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 cv.imshow("gray image", gray)
 
 
-cap = cv.VideoCapture('Outside.mov')
+cap = cv.VideoCapture('Videos/')
 
 for i in range(10):
     ret, frame = cap.read()
